@@ -8,7 +8,7 @@ namespace MyMathDLLTest
     [TestClass]
     public class MathTest
     {
-        //sdkfkop
+        
         MyMath m = new MyMath();
         [TestMethod]
         public void AddTest()
@@ -25,6 +25,11 @@ namespace MyMathDLLTest
         public void MultipleTest()
         {
             Assert.AreEqual(m.Multiple(2, 4), 8);
+        }
+        [TestMethod]
+        public void DivideTest()
+        {
+            Assert.AreEqual(m.Divide(6, 2), 3);
         }
 
 
